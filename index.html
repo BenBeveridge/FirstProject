@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+    <header>
+        <h1>Write Start <br><span>Preschool</span></h1>
+        <img src="C:\Users\bbeverid\Desktop\Web Dev\FirstProject\images\Crayon.jpg" alt="">
+    </header>    
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="/aboutus.html">About Us</a></li>
+            <li><a href="/classes.html">Classes</a></li>
+            <li><a href="/policies.html">Policies</a></li>
+        </ul>
+    </nav>
+
+    <p> Write Start preschool is a program designed to serve children ages three to five years old. My goal is to provide a high quality, developmentally appropriate program for young children and their families. I am to create a fun, secure and supportive environment in which children are encouraged to develop their individual potential. The children will gain social and emotional skills and independence as they interact with the other children and me.
+
+        The philosophy of my preschool is centered on play. Young children learn through kinetic experiences and participation in their everyday life so it is our job to offer children the opportunities to select, explore, and practice various skills through a variety of materials and activities. It is through play that children explore their world and what may look like “child’s play” to us is actually their learning in progress for the child. Through play our children also develop problem solving skills and communication skills. My curriculum will also include language, literacy, art, math, science, dramatic play, music, and movement activities that will be implemented into monthly themed activities. The daily schedule includes active and quiet teacher directed activities for the individual and group. Each day will provide opportunities for cognitive, physical, and self-help development.</p>
+       
+    <!-- Images used to open the lightbox -->
+  <div class="row">
+    <div class="column">
+      <img src="images\MissKaren.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="images\Graduation.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="images\Halloween.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="images\Summercamp.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+  </div>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="images\MissKaren.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="images\Graduation.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="images\Halloween.jpg" style="width:100%">
+      </div>
+
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="images\Summercamp.jpg" style="width:100%">
+      </div>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="images\MissKaren.jpg" onclick="currentSlide(1)" alt="Nature">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images\Graduation.jpg" onclick="currentSlide(2)" alt="Snow">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images\Halloween.jpg" onclick="currentSlide(3)" alt="Mountains">
+      </div>
+
+      <div class="column">
+        <img class="demo" src="images\Summercamp.jpg" onclick="currentSlide(4)" alt="Lights">
+      </div>
+    </div>
+  </div>
+
+    
+  <footer>
+          <ul>
+              <li><a href="https://www.facebook.com/writestart.misskaren/">Facebook</a></li>
+          </ul>
+  </footer>
+
+  <script src="Javascript.js"></script>
+
+</body>
+
+</script> 
+
+</html>
